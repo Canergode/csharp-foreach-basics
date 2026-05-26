@@ -1,0 +1,37 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ForeachBasics 
+{
+
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ForeachLoop();
+            Console.ReadLine();
+        }
+
+        private static void ForeachLoop()
+        {
+            // Iterate through string array
+            string[] countries = { "Turkey", "Germany", "France" };
+            foreach (var item in countries)
+            {
+                Console.WriteLine(item);
+            }
+
+            // Iterate through int array
+            int[] numbers = { 1, 2, 7, 4, 52, 64, 10 };
+            foreach (var item in numbers)
+            {
+                Console.WriteLine(item);
+            }
+        }
+    }
+
+}
